@@ -1,6 +1,12 @@
 ### Hi there 👋 Welcome 
 
-Click [here](https://nathanshuai.github.io/fakebook/) to see my POSTING system of a social network.
+Click [here](https://nathanshuai.github.io/fakebook/) to see my Social website that requires a user to login before accessing the profile page.
+
+This project uses local storage to store the required email and password.
+
+# Login Details
+Email - example@gmail.com
+Password - example
 
 <br />
 
@@ -8,6 +14,6 @@ Click [here](https://nathanshuai.github.io/fakebook/) to see my POSTING system o
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-# fakebook
+
 
 # connectme
