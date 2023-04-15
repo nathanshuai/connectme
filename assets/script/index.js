@@ -89,15 +89,7 @@ const subscriber = new Subscriber(
 const accountBtn = document.querySelector('.img');
 const modalContainer = document.getElementById('modal-container');
 
-// Add click event listener to the button
-accountBtn.addEventListener('click', () => {
-// Call the getInfo() method to retrieve user account information
-const userInfo = subscriber.getInfo();
-const form = document.querySelector('form');
-
-// Display the modal
-modalContainer.style.visibility = 'visible'; 
-});
+const myTextarea = document.getElementById('myTextarea');
 
 // Function to add a new post
 function addPost() {
@@ -107,7 +99,7 @@ function addPost() {
 
     // Validate the post text
     if (!postText) {
-      form.classList.add('error');
+      myTextarea.style.border = "1px solid #ff2846";
       return;
     };
     // Create a new post object
