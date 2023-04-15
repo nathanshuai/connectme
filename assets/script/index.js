@@ -93,17 +93,7 @@ const modalContainer = document.getElementById('modal-container');
 accountBtn.addEventListener('click', () => {
 // Call the getInfo() method to retrieve user account information
 const userInfo = subscriber.getInfo();
-// Populate the content of the modal with the retrieved information
-const userID = document.getElementById('id');
-const userName = document.getElementById('username');
-const userEmail = document.getElementById('email');
-const userGroups = document.getElementById('groups');
-const userCanMonetize = document.getElementById('can Monetize');
-userID.textContent = `ID: ${subscriber.id}`;
-userName.textContent = `Username: ${subscriber.userName}`;
-userEmail.textContent = `Email: ${subscriber.email}`;
-userGroups.textContent = `Groups: ${subscriber.groups}`;
-userCanMonetize.textContent = `Can monetize: ${subscriber.getCanMonetize()}`;
+const form = document.querySelector('form');
 
 // Display the modal
 modalContainer.style.visibility = 'visible'; 
@@ -117,7 +107,7 @@ function addPost() {
 
     // Validate the post text
     if (!postText) {
-      alert('Please enter some text for your post.');
+      form.classList.add('error');
       return;
     };
     // Create a new post object

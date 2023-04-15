@@ -110,6 +110,10 @@ form {
   background-color: #fff;
 }
 
+form.error {
+  background-color: #e7b66c;
+}
+
 #myTextarea{
   font-size: 16px;
   padding: 10px;
