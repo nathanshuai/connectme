@@ -1,6 +1,6 @@
 ### Hi there 👋 Welcome 
 
-Click [here](https://nathanshuai.github.io/fakebook/) to see my Social website that requires a user to login before accessing the profile page.
+Click [here](https://nathanshuai.github.io/connectme/) to see my Social website that requires a user to login before accessing the profile page.
 
 This project uses local storage to store the required email and password.
 
