@@ -1,0 +1,541 @@
+@import url(./reset.css);
+
+:root {
+  --app-dark-bg: #1a1d28;
+  --app-green: #33ab4e;
+  --app-purple: #833cff;
+  --app-orange: #ff833c;
+  --app-blue: #3c57ff;
+  --app-blue-hover: #364ee6;
+  --app-red: #ff3c57;
+  --app-red-hover: #ff2846;
+  --app-white:#fff;
+  --app-gray:#575555;
+  --app-pink:#f09;
+}
+
+body {
+  height: 100%;
+  background-color: rgb(215 215 225 / 0.5);
+}
+/*header*/
+
+.container {
+  width: min(100% - 40px, 1080px);
+  margin-inline: auto;
+}
+
+header .container {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  background-color: #5061a0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.title h1 {
+  font-size: 20px;
+  color: var(--app-white);
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+
+nav ul {
+  margin-block: center;
+  list-style: none;
+  font-size: 0;
+}
+
+nav ul li {
+  display: inline;
+  line-height: 58px;
+}
+
+nav ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ebeef0;
+  text-decoration: none;
+  letter-spacing: 0.2px; 
+  transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #007fff;
+}
+
+header div nav ul li + li {
+  margin-left: 20px;
+}
+
+.icon img{
+  margin-right: 10px;
+}
+
+.img{
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+
+/* center
+*/
+
+.center {
+  display: grid;
+  place-items: center;
+}
+
+
+/*form */
+
+form {
+  width: 550px;
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+#myTextarea{
+  font-size: 16px;
+  padding: 10px;
+  background-color: transparent;
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.bottom-line {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bottom-line p {
+  color: #ebeef0;
+  font-size: 14px;
+  padding: 5px ;
+  margin-left: -200px;
+  margin-top: 10px;
+}
+
+#image {
+  display: none;
+}
+
+.file-upload {
+  padding-top: 8px;
+  color: #e7b66c;
+  cursor: pointer;
+}
+
+.file-upload i {
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  display: block;
+  margin-left: 20px;
+  width: 400px;
+  height: 135px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 400;
+  transition:  all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+#post-button  {
+  margin-top: 4px;
+  margin-right: 26px;
+  width: 80px;
+  height: 35px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  font-weight: 600;
+  transition:  all 0.25s ease-in-out;
+  cursor: pointer;
+}
+
+#post-button {
+  background-color: #33ab4e;
+}
+
+#post-button:hover {
+  background-color: #086e20;
+}
+
+#buttonone {
+  background-color: #33ab4e;
+}
+
+
+/*box
+*/
+
+.post-form {
+  margin-bottom: 20px;
+}
+
+.post-list {
+  border-radius: 5px;
+  padding: 10px;
+}
+
+#posts {
+  list-style: none;
+  border-radius: 5px;
+}
+
+.post {
+  width: 550px;
+  margin: 30px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.post-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  margin: 10px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.post-header h3 {
+  margin-left: -300px;
+}
+
+.post-text {
+  margin: 10px;
+}
+
+.post-image {
+  padding: 5px;
+  max-width: 100%;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+
+/*section page*/
+
+section {
+  margin-top: 30px;
+  width: 100%;
+  height: 100%;
+}
+
+.columns {
+  margin-left: -60px;
+  border: none;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+/* Profile Info   */
+
+
+.profile-info {
+  width: 260px;
+  height: 480px;
+  border: none;
+  padding: 15px 10px;
+  height: 580px;
+  border-radius: 5px;
+  background-color: #fff;
+  margin-inline: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+}
+
+.profile-image {
+  width: 190px;
+  height: 190px;
+  margin: 0 auto;
+}
+
+.profession {
+  height: 110px;
+  margin-top: 10px;
+  border: none;
+  text-align: center;
+}
+
+.profession p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.profession p + p, .analytics p, .upgrade p {
+  color: rgb(73, 73, 73, 0.8);
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.profession i {
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 0;
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 18px;
+  width: 30px;
+  height: 30px;
+  color: var(--app-light-purple);
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.profession i:hover {
+  color: var(--app-purple-hover);
+}
+
+.divider {
+  width: 100%;
+  height: 2px;
+  background-color: rgb(71, 71, 71, 0.3);
+  margin-top: 0px;
+}
+
+.analytics {
+  border: none;
+  height: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.analytics .divider {
+  height: 100%;
+  width: 2px;
+}
+
+.connections, .followers {
+  width: 105px;
+  height: 90px;
+  padding: 15px 10px;
+  text-align: center;
+  border: none;
+  background-color: #fff;
+}
+
+.analytics span {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--app-dark-blue);
+}
+
+.analytics P {
+  line-height: 6px;
+}
+
+.upgrade, .export {
+  padding: 15px 10px;
+  background-color: #fff;
+  height: 150px;
+  text-align: center;
+  border-radius: var(--app-border-radius);
+}
+
+.upgrade p {
+  margin-top: 25px;
+}
+
+button {
+  color: #fff;
+  font-size: 14px;
+  background-color: var(--app-purple);
+  color: #fff;
+  border: none;
+  width: 100px;
+  height: 36px;
+  padding: 10px;
+  margin: 10px auto;
+  cursor: pointer;
+  border-radius: 6px;
+  text-align: center;
+  transition: all 0.25s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--app-blue-hover);
+}
+
+.export {
+  margin: 20px auto;
+  color: var(--app-light-purple);
+  background-color: var(--app-purple);
+  border: 1px solid var(--app-light-purple);
+  height: 60px;
+  width: 230px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+/* Friends  */
+
+.friends {
+  width: 300px;
+  height: 100%;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 15px;
+  text-align: center;
+  margin-inline: auto;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 26px 30px -10px, rgba(0, 0, 0, 0.1) 0px 16px 10px -10px;
+}
+
+.friends p {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--app-dark-blue);
+}
+
+.other-users {
+  margin-top: 20px;
+  border: none;
+}
+
+.user {
+  width: 100%;
+  height: 80px;
+  margin-top: 5px;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.2);
+  padding: 10px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  transition: all 0.25s ease-in-out;
+}
+
+.image {
+  width: 55px;
+  height: 55px;
+  border: none;
+  text-align: right;
+  border-radius: 50%;
+}
+
+.user img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+}
+
+.userinfo {
+  border: none;
+  width: 180px;
+  height: 55px;
+  padding: 4px 10px;
+}
+
+.user:hover {
+  background-color: rgba(214, 174, 174, 0.8);
+}
+
+.userinfo p {
+  text-align: left;
+  color: var(--app-dark-blue);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.userinfo P + P {
+  color: rgb(73, 73, 73, 0.8);
+  font-size: 14px;
+}
+
+/*footer*/
+
+footer {
+  width: 100%;
+  height: 150px;
+  overflow: hidden;
+  border: none;
+  margin-top: 60px;
+  padding: 10px;
+  background-color: #5061a0;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons {
+  height: 100px;
+  margin-inline: auto;
+  padding: 10px;
+  border: none;
+}
+
+.social-icons ul {
+  list-style: none;
+  text-align: center;
+}
+
+.social-icons ul li {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.social-icons ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 28px;
+  color: #fff;
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: var(--app-border-radius);
+}
+  
+.fa-brands:hover  {
+  color: var(--app-purple);
+}
+
+.social-icons p {
+  font-size: 14px;
+  color:  var(--app-white);
+  opacity: 0.9;
+  font-weight: 400; 
+  text-align: center;
+  margin-top: 15px;
+}

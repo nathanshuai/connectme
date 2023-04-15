@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title> Connect me </title>
+        <link rel=" shortcut icon" href="./assets/image/Favorite icon.png?v=2" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&family=Lora&family=Nunito+Sans:wght@400;600;700&display=swap">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
+        <link rel="stylesheet" href="./assets/style/index.css" media="all">
+        <script src="assets/script/index.js" defer></script>   
+    </head>
+    <body>
+        <header> 
+            <div class="container">
+                <div class="title">
+                    <h1>ConnectMe</h1>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Friends</a></li>
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Groups</a></li>
+                        <li><a href="#">My ads</a></li>
+                        <li><a href="#">Settings</a></li>
+                    </ul>
+                </nav>
+                <div class="icon">
+                    <img class="img" src="./assets/image/My image.png" alt="image"></img>                   
+                </div>   
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="center">
+                    <section>
+                        <div class="container">
+                            <div class="columns">
+                                <div class="profile-info">
+                                    <div class="profile-image">
+                                        <img src="./assets/image/My image.png" alt="image"></img> 
+                                    </div>
+                                    <div class="profession">
+                                        <p>Nathan Shuai</p>
+                                        <P>Software Developer</P> 
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="analytics">
+                                        <div class="connections">
+                                            <span>488</span>
+                                            <p>Connections+</p>
+                                        </div>
+                                        <div class="divider"></div>
+        
+                                        <div class="followers">
+                                            <span>388</span>
+                                            <p>Followers+</p>
+                                        </div>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="upgrade">
+                                        <p>Want to know more about me ?</p>
+                                        <button id="buttonone">CONNECT</button> <button id="buttontwo">FOLLOW</button>
+                                    </div>
+                                    <div class="divider"></div>
+        
+                                    <div class="export">
+                                        <p><i class="fa-solid fa-arrow-up-from-bracket"></i> UPGRADE TO PREMIUM</p>
+                                    </div>
+                                </div>
+                                <div class="container">
+                                    <form>
+                                        <textarea id="myTextarea" rows="5" placeholder="What's new, NathanShuai?"></textarea>
+                                        <div class="bottom-line">
+                                            <label for="image" class="file-upload"><i class="fa-solid fa-image"></i><span></span></label>
+                                            <input type="file" id="image" name="image" onchange="displayFileName()">
+                                            <p id="file-name"></p>
+                                            <button type="button" id="post-button" onclick="addPost()">Post</button>
+                                        </div> 
+                                    </form>
+                                    <div class="post-list">
+                                        <ul id="posts"></ul>
+                                    </div>
+                                </div>
+                                <div class="friends">
+                                    <p>People you may know</p>
+                                    <div class="other-users"></div>
+                                </div>
+                            </div>
+                        </div> 
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container footer">
+                </div>
+                <div class="social-icons">
+                    <ul>
+                        <li><a href= #><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href= #><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href= #><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>   
+                    <p>
+                        Copyright &copy; <span class='year'></span> By NathanShuai
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
